@@ -20,6 +20,13 @@ jobs:
       - name: Build
         run: go build -v ./...
 
+      - name: GO Auto Pakckager
+        run: | 
+          export GOPATH=`go env GOPATH` &&
+          export PATH="$GOPATH/bin:$PATH" &&
+          go install github.com/relaxnow/vcgopkg@latest
+          vcgopkg
+          
       - run: |
           ls
           zip veracode.zip vendor/ 
