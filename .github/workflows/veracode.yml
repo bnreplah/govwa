@@ -64,6 +64,6 @@ jobs:
           includenewmodules: true
           version: ${{ github.run_id }}
           createprofile: true
-          teams: "Demo Team"
+          teams: 'Demo Team'
 
   
