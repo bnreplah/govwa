@@ -20,7 +20,9 @@ jobs:
       - name: Build
         run: go build -v ./...
 
-      - run: zip veracode.zip ./ 
+      - run: |
+          ls
+          zip veracode.zip vendor/ 
           
       - name: Publish the artifact
         uses: actions/upload-artifact@v2
