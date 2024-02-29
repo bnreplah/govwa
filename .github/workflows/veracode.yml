@@ -53,7 +53,7 @@ jobs:
         env:
           VeracodeID: ${{ secrets.VeracodeID }} # Lembrar de criar as credenciais no Secrets
           VeracodeKey: ${{ secrets.VeracodeKey }}
-          AppName: ${{ github.repository }}
+          AppName: "Govwa"
         with:
           vid: '$VeracodeID'
           vkey: '$VeracodeKey'
@@ -64,5 +64,6 @@ jobs:
           includenewmodules: true
           version: ${{ github.run_id }}
           createprofile: true
+          teams: "Demo Team"
 
   
