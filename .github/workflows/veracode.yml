@@ -70,7 +70,8 @@ jobs:
       - name: Download Artefato
         uses: actions/download-artifact@v4.3.0
         with:
-          name: pacoteVeracode
+          name: Veracode-artifact
+          
       - name: UploadAndScan
         uses: veracode/veracode-uploadandscan-action@master # Faz a analise da Veracode
         env:
